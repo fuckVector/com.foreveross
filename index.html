@@ -1,0 +1,89 @@
+<div id="news-list" data-view="com.foreveross.chameleon.exhibition.news/index">
+  <header class="bar bar-nav">
+    <a class="icon icon-left-nav pull-left" data-action="back"></a>
+    <h1 class="title">新闻</h1>
+  </header>
+  <div class="content">
+    <nav class="bar bar-tab">
+      <a class="tab-item active" state="recommend">
+        首页推荐
+      </a>
+      <a class="tab-item" state="announcement">
+        公告栏
+      </a>
+      <a class="tab-item" state="jobs">
+        招聘信息
+      </a>
+    </nav>
+    <div class="bar scrollbar" id="strip"></div>
+    <div class="newslist active" id="recommendList">
+    <div div id="recommend" class="listview">
+      <div class="scroller">
+      <div class="pulldown">
+        <span class="icon"></span><span class="label"></span>
+      </div>
+      <ul></ul>
+      <button class="loadmore btn btn-block btn-outlined">
+        <div class="label">加载更多</div>
+        <span class="icon"></span>
+      </button>
+      <div class="message">
+        <div class="empty">没有数据</div>
+        <div class="error">数据加载失败</div>
+      </div>
+      <!--
+      -->
+     </div>
+    </div>
+    </div>
+    <div class="newslist" id="announcementList">
+    <div div id="announcement" class="listview">
+      <div class="scroller">
+      <div class="pulldown">
+        <span class="icon"></span><span class="label"></span>
+      </div>
+      <ul></ul>
+      <button class="loadmore btn btn-block btn-outlined">
+        <div class="label">加载更多</div>
+        <span class="icon"></span>
+      </button>
+      <div class="message">
+        <div class="empty">没有数据</div>
+        <div class="error">数据加载失败</div>
+      </div>
+      <!--
+      -->
+     </div>
+    </div>
+      <ul></ul>
+    </div>
+    <div class="newslist" id="jobsList">
+    <div div id="jobs" class="listview">
+      <div class="scroller">
+      <div class="pulldown">
+        <span class="icon"></span><span class="label"></span>
+      </div>
+      <ul></ul>
+      <button class="loadmore btn btn-block btn-outlined">
+        <div class="label">加载更多</div>
+        <span class="icon"></span>
+      </button>
+      <div class="message">
+        <div class="empty">没有数据</div>
+        <div class="error">数据加载失败</div>
+      </div>
+      <!--
+      -->
+     </div>
+    </div>
+      <ul></ul>
+    </div>
+  </div>
+  <script id="news_listTemplate" type="text/x-jquery-tmpl">
+    <div class="listitem" style="" data-id="<%=id%>">
+        <h4 class="news_title"><%=title%></h4>
+        <p class="news_time" style=""><%=releaseTime%></p>
+    </div>
+    <hr>
+</script>
+</div>
